@@ -1,0 +1,260 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["object" == typeof document ? document.currentScript : void 0, 676525, e => {
+    "use strict";
+    var t = e.i(843476),
+        r = e.i(522016);
+    e.s(["default", 0, ({
+        children: e,
+        href: a,
+        onClick: s,
+        variant: l = "primary",
+        size: i = "md",
+        className: o = "",
+        fullWidth: n = !1,
+        type: d = "button",
+        disabled: x = !1,
+        loading: c = !1,
+        target: h,
+        rel: m,
+        icon: u
+    }) => {
+        let g = "inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 cursor-pointer text-center relative overflow-hidden",
+            p = o.match(/(?:^|\s)(?:sm:|md:|lg:|xl:|2xl:)?(hidden|flex|block|inline|inline-flex|inline-block|grid)(?:\s|$)/) ? g.replace(/\binline-flex\b/, "").trim() : g,
+            b = `${p} ${({primary:"bg-[#3DB246] hover:bg-[#2e8a34] text-white shadow-lg hover:shadow-xl hover:scale-105",secondary:"border border-gray-400 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white hover:scale-105",outline:"border-2 border-gray-400 text-gray-700 hover:bg-gray-50 hover:border-gray-500",ghost:"bg-transparent hover:bg-gray-100 text-gray-700",gradient:"bg-gradient-to-r from-orange-700 via-orange-600 to-orange-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 hover:scale-105",dark:"bg-gray-900 hover:bg-gray-800 text-white shadow-lg hover:shadow-xl hover:scale-105","purple-outline":"border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white backdrop-blur-sm bg-white/50 hover:shadow-lg transform hover:-translate-y-0.5 hover:scale-105",purple:"bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-xl hover:scale-105",brand:"bg-[#2091F9] hover:bg-blue-600 text-white shadow-lg hover:shadow-xl hover:scale-105",orange:"text-orange-500 hover:text-white rounded-full font-semibold bg-gray-50 hover:bg-orange-500 hover:shadow-lg hover:scale-105"})[l]} ${({sm:"px-6 py-2 text-sm",md:"px-5 py-2 sm:px-6 sm:py-2.5 text-sm sm:text-base",lg:"px-10 py-4 text-lg"})[i]} ${n?"w-full sm:w-auto":""} ${o} ${x||c?"opacity-70 cursor-not-allowed pointer-events-none":""}`.trim().replace(/\s+/g, " "),
+            v = (0, t.jsxs)(t.Fragment, {
+                children: [c && (0, t.jsxs)("svg", {
+                    className: "animate-spin -ml-1 mr-3 h-4 w-4 text-current",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, t.jsx)("circle", {
+                        className: "opacity-25",
+                        cx: "12",
+                        cy: "12",
+                        r: "10",
+                        stroke: "currentColor",
+                        strokeWidth: "4"
+                    }), (0, t.jsx)("path", {
+                        className: "opacity-75",
+                        fill: "currentColor",
+                        d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    })]
+                }), (0, t.jsxs)("span", {
+                    className: `flex items-center gap-2 ${c?"opacity-80":""}`,
+                    children: [e, u]
+                })]
+            });
+        return a && !c ? (0, t.jsx)(r.default, {
+            href: a,
+            className: b,
+            target: h,
+            rel: m,
+            onClick: s,
+            children: v
+        }) : (0, t.jsx)("button", {
+            type: d,
+            className: b,
+            onClick: s,
+            disabled: x || c,
+            children: v
+        })
+    }])
+}, 514764, e => {
+    "use strict";
+    let t = (0, e.i(475254).default)("send", [
+        ["path", {
+            d: "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z",
+            key: "1ffxy3"
+        }],
+        ["path", {
+            d: "m21.854 2.147-10.94 10.939",
+            key: "12cjpa"
+        }]
+    ]);
+    e.s(["Send", () => t], 514764)
+}, 934657, e => {
+    "use strict";
+    var t = e.i(843476),
+        r = e.i(846932),
+        a = e.i(514764),
+        s = e.i(271645),
+        l = e.i(676525),
+        i = e.i(39793);
+    e.s(["default", 0, () => {
+        let [e, o] = (0, s.useState)(!1);
+        return (0, t.jsxs)("section", {
+            className: "consultation-banner-section relative w-full overflow-hidden",
+            children: [(0, t.jsx)("div", {
+                className: "consultation-banner-bg absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+            }), (0, t.jsx)("div", {
+                className: "absolute inset-0 w-full h-full bg-gradient-to-r from-[#1a1f3a]/90 via-[#2a1f2e]/85 to-[#8b4513]/80"
+            }), (0, t.jsx)("div", {
+                className: "relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10 lg:py-12",
+                children: (0, t.jsxs)("div", {
+                    className: "flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8",
+                    children: [(0, t.jsxs)(r.motion.div, {
+                        className: "flex-1 text-center lg:text-left",
+                        initial: {
+                            opacity: 0,
+                            x: -30
+                        },
+                        whileInView: {
+                            opacity: 1,
+                            x: 0
+                        },
+                        viewport: {
+                            once: !0
+                        },
+                        transition: {
+                            duration: .8,
+                            ease: "easeOut"
+                        },
+                        children: [(0, t.jsx)("h2", {
+                            className: "text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1 leading-tight",
+                            children: "Ready to move your business forward with confidence?"
+                        }), (0, t.jsx)("p", {
+                            className: "text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-2xl mx-auto lg:mx-0",
+                            children: "Get software solutions built around how your business actually operates, designed for stability, clarity, and long term success."
+                        })]
+                    }), (0, t.jsx)(r.motion.div, {
+                        className: "flex-shrink-0",
+                        initial: {
+                            opacity: 0,
+                            x: 30
+                        },
+                        whileInView: {
+                            opacity: 1,
+                            x: 0
+                        },
+                        viewport: {
+                            once: !0
+                        },
+                        transition: {
+                            duration: .8,
+                            delay: .2,
+                            ease: "easeOut"
+                        },
+                        children: (0, t.jsxs)(l.default, {
+                            onClick: () => {
+                                o(!0)
+                            },
+                            variant: "gradient",
+                            size: "md",
+                            className: "group shadow-lg hover:shadow-xl",
+                            children: [(0, t.jsx)(a.Send, {
+                                className: "w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform"
+                            }), "Free Consultation"]
+                        })
+                    })]
+                })
+            }), (0, t.jsx)(i.default, {
+                isOpen: e,
+                onClose: () => {
+                    o(!1)
+                }
+            })]
+        })
+    }])
+}, 358750, e => {
+    "use strict";
+    var t = e.i(843476),
+        r = e.i(846932);
+    e.s(["default", 0, ({
+        badgeText: e,
+        title: a,
+        description: s,
+        backgroundImage: l = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
+        overlayColor: i = "bg-indigo-950/85"
+    }) => (0, t.jsxs)("div", {
+        className: "text-white pt-20 pb-40 px-4 sm:px-6 relative overflow-hidden bg-cover bg-center",
+        style: {
+            backgroundImage: `url('${l}')`
+        },
+        children: [(0, t.jsx)("div", {
+            className: `absolute inset-0 ${i} mix-blend-multiply z-0`
+        }), (0, t.jsx)("div", {
+            className: "absolute inset-0 bg-linear-to-t from-[#FAFAFA] via-transparent to-transparent z-0 opacity-40"
+        }), (0, t.jsxs)(r.motion.div, {
+            className: "max-w-4xl mx-auto relative z-10 text-center",
+            initial: {
+                opacity: 0,
+                y: -20
+            },
+            animate: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                duration: .6
+            },
+            children: [(0, t.jsx)("span", {
+                className: "inline-block px-4 py-1.5 rounded-full bg-blue-500/20 backdrop-blur-md border border-white/10 text-blue-100 text-[10px] sm:text-xs font-bold mb-6 uppercase tracking-[0.2em]",
+                children: e
+            }), (0, t.jsx)("h1", {
+                className: "text-3xl md:text-5xl font-bold mb-6 tracking-tight drop-shadow-sm font-urbanist",
+                children: a
+            }), (0, t.jsx)("p", {
+                className: "text-sm md:text-lg text-blue-100/90 max-w-2xl mx-auto leading-relaxed",
+                children: s
+            })]
+        })]
+    })])
+}, 925947, e => {
+    "use strict";
+    var t = e.i(843476),
+        r = e.i(271645),
+        a = e.i(664659),
+        s = e.i(358750);
+    e.s(["default", 0, ({
+        faqs: e
+    }) => {
+        let [l, i] = (0, r.useState)([]);
+        return (0, t.jsxs)("div", {
+            className: "w-full bg-[#FAFAFA] min-h-screen font-sans pb-20",
+            children: [(0, t.jsx)(s.default, {
+                badgeText: "Help Center & Support",
+                title: "Frequently Asked Questions",
+                description: "Find answers to common questions about our products, shipping, returns, and more."
+            }), (0, t.jsx)("div", {
+                className: "max-w-4xl mx-auto px-4 sm:px-6 -mt-20 relative z-20",
+                children: (0, t.jsx)("div", {
+                    className: "max-w-3xl mx-auto bg-white p-4 md:p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100",
+                    children: (0, t.jsx)("div", {
+                        className: "space-y-4",
+                        children: e.map((e, r) => {
+                            let s = l.includes(e._id);
+                            return (0, t.jsxs)("div", {
+                                className: `bg-white rounded-2xl border transition-all duration-300 overflow-hidden ${s?"border-blue-200 shadow-[0_8px_30px_rgb(59,130,246,0.08)]":"border-gray-100 shadow-sm hover:border-gray-200 hover:shadow-md"}`,
+                                children: [(0, t.jsxs)("button", {
+                                    onClick: () => {
+                                        var t;
+                                        return t = e._id, void i(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
+                                    },
+                                    className: "w-full text-left px-5 py-4 flex items-center justify-between gap-4 cursor-pointer focus:outline-none",
+                                    "aria-expanded": s,
+                                    children: [(0, t.jsx)("h3", {
+                                        className: `text-sm md:text-base font-semibold pr-4 transition-colors ${s?"text-blue-700":"text-gray-900"}`,
+                                        children: e.question
+                                    }), (0, t.jsx)("div", {
+                                        className: `shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300 ${s?"bg-blue-100 text-blue-600 rotate-180":"bg-gray-50 text-gray-400"}`,
+                                        children: (0, t.jsx)(a.ChevronDown, {
+                                            className: "w-4 h-4"
+                                        })
+                                    })]
+                                }), (0, t.jsx)("div", {
+                                    className: `grid transition-all duration-300 ease-in-out ${s?"grid-rows-[1fr] opacity-100":"grid-rows-[0fr] opacity-0"}`,
+                                    children: (0, t.jsx)("div", {
+                                        className: "overflow-hidden",
+                                        children: (0, t.jsx)("div", {
+                                            className: "px-5 pb-5 text-gray-600 leading-relaxed text-xs md:text-sm border-t border-gray-50 pt-3",
+                                            children: e.answer
+                                        })
+                                    })
+                                })]
+                            }, e._id)
+                        })
+                    })
+                })
+            })]
+        })
+    }])
+}]);
