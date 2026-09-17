@@ -1,0 +1,18 @@
+.key-features-horizontal-swiper {
+    width: 100% !important;
+    overflow: hidden !important
+}
+
+.key-features-horizontal-swiper .swiper-wrapper {
+    display: flex !important
+}
+
+.key-features-horizontal-swiper .swiper-slide {
+    align-items: stretch !important;
+    width: 100% !important;
+    display: flex !important
+}
+
+.key-features-horizontal-swiper .swiper-slide>* {
+    width: 100% !important
+}

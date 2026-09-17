@@ -1,0 +1,142 @@
+<!-- Site header — shared across every page (desktop nav, services dropdown,
+     mobile menu, top contact bar). {{CLS:<href>}} is replaced at build time
+     with the active/inactive nav-item styling for the current page. -->
+<nav class="w-full fixed top-0 left-0 right-0 z-[9999] transition-all duration-300">
+  <div class="bg-[#0D0D11] w-full overflow-hidden border-b border-[#222227]/60 scrollbar-hide">
+    <div class="w-full relative overflow-hidden scrollbar-hide">
+      <div class="flex container mx-auto relative h-10 flex-row items-center justify-center lg:justify-between py-1 px-4 lg:px-10 scrollbar-hide">
+        <div class="hidden lg:flex items-center gap-1.5 lg:gap-2">
+          <a target="_blank" rel="noopener noreferrer" class="border border-[#222227] hover:bg-[#1a1a20] rounded-md p-1.5 transition-colors cursor-pointer" aria-label="Instagram" href="https://www.instagram.com/haddad_muzallat_kuwait/">
+          <div class="text-white cursor-pointer">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="6" fill="url(#ig_grad_desktop)"></rect><rect x="2" y="2" width="20" height="20" rx="5" stroke="white" stroke-width="1.5"></rect><path d="M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5Z" stroke="white" stroke-width="1.5"></path><circle cx="17.5" cy="6.5" r="1.2" fill="white"></circle><defs><radialgradient id="ig_grad_desktop" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4 20) rotate(-45) scale(26)"><stop stop-color="#F0C24E"></stop><stop offset="0.3" stop-color="#E95B39"></stop><stop offset="0.7" stop-color="#CE277D"></stop><stop offset="1" stop-color="#4441D2"></stop></radialgradient></defs></svg>
+          </div>
+          </a><a target="_blank" rel="noopener noreferrer" class="border border-[#222227] hover:bg-[#1a1a20] rounded-md p-1.5 transition-colors cursor-pointer" aria-label="WhatsApp" href="https://wa.me/96569690261">
+          <div class="text-white cursor-pointer">
+            <svg class="w-5 h-5" fill="#25D366" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+          </div>
+          </a><a target="_blank" rel="noopener noreferrer" class="border border-[#222227] hover:bg-[#1a1a20] rounded-md p-1.5 transition-colors cursor-pointer" aria-label="YouTube" href="https://www.youtube.com/@haddadkuwait">
+          <div class="text-white cursor-pointer">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.58 6.54C21.43 5.96 21.05 5.51 20.47 5.36C18.66 4.88 12 4.88 12 4.88C12 4.88 5.34 4.88 3.53 5.36C2.95 5.51 2.57 5.96 2.42 6.54C1.94 8.35 1.94 12 1.94 12C1.94 12 1.94 15.65 2.42 17.46C2.57 18.04 2.95 18.49 3.53 18.64C5.34 19.12 12 19.12 12 19.12C12 19.12 18.66 19.12 20.47 18.64C21.05 18.49 21.43 18.04 21.58 17.46C22.06 15.65 22.06 12 22.06 12C22.06 12 22.06 8.35 21.58 6.54Z" fill="#FF0000"></path><path d="M9.99 15.11L15.22 12L9.99 8.88V15.11Z" fill="white"></path></svg>
+          </div>
+          </a>
+        </div>
+        <div class="flex z-10 flex-row items-center">
+          <div class="flex items-center gap-1.5 lg:gap-3 lg:px-6 lg:py-3 lg:border-r border-white/20 justify-start">
+            <div class="text-white shrink-0 scale-75 lg:scale-100">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-white text-xs lg:text-base font-normal whitespace-nowrap" dir="ltr">+965 6969 0261</span>
+            </div>
+          </div>
+          <div class="hidden lg:flex items-center gap-3 pl-4 lg:pl-6 py-3 justify-start">
+            <div class="text-white shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-white text-sm lg:text-base font-normal whitespace-nowrap">haddadkuwait@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden lg:block bg-[#3DB246] -top-0.5 h-10 absolute overflow-hidden w-1/2 left-0" style="clip-path: polygon(0px 0px, 100% 0px, 96% 100%, 0px 100%);">
+    </div>
+  </div>
+  <div class="bg-[#0D0D11] h-20 w-full border-b border-[#222227]">
+    <div class="container mx-auto px-4 lg:px-10 h-full">
+      <div class="flex items-center justify-between h-full gap-4 md:gap-8">
+        <a class="flex items-center shrink-0" href="/"><img alt="Hadad Mazallat Logo" width="240" height="72" decoding="async" data-nimg="1" class="h-10 sm:h-12 w-auto object-contain" src="/assets/images/haddad-kuwait-logo.webp" style="color: transparent;"></a>
+        <div class="flex items-center gap-4 lg:gap-6">
+          <nav class="hidden lg:flex items-center gap-1">
+            <a class="px-4 py-2 rounded-md text-base font-normal transition-colors {{CLS:/}}" href="/"><span>الرئيسية</span></a>
+            <div class="relative">
+              <a class="flex items-center gap-1 px-4 py-2 rounded-md text-base font-normal transition-colors {{CLS:/services/}}" href="/services/"><span>الخدمات</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down transition-transform duration-300 text-gray-400" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+              </a>
+              <div class="absolute top-full right-0 pt-1 z-[1000] min-w-[220px]" style="transition: 0.25s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; transform: translateY(8px); pointer-events: none;">
+                <div class="bg-[#0D0D11] rounded-xl border border-[#222227] overflow-hidden shadow-2xl py-2">
+                  <a class="group flex items-center gap-2.5 px-4 py-2.5 transition-all duration-200 hover:bg-[#2a2a2a]" href="/services/%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D9%85%D8%B8%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/">
+                  <div class="w-1.5 h-1.5 rounded-full bg-gray-600 group-hover:bg-[#3DB246] transition-colors shrink-0">
+                  </div>
+                  <span class="text-[13px] text-gray-300 group-hover:text-white transition-colors">تركيب مظلات الكويت</span></a><a class="group flex items-center gap-2.5 px-4 py-2.5 transition-all duration-200 hover:bg-[#2a2a2a]" href="/services/%D8%B3%D9%8A%D8%A7%D8%AC-%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D8%A6%D9%82-%D8%A7%D9%84%D8%A3%D8%AE%D8%B6%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/">
+                  <div class="w-1.5 h-1.5 rounded-full bg-gray-600 group-hover:bg-[#3DB246] transition-colors shrink-0">
+                  </div>
+                  <span class="text-[13px] text-gray-300 group-hover:text-white transition-colors">سياج الحدائق الأخضر في الكويت</span></a><a class="group flex items-center gap-2.5 px-4 py-2.5 transition-all duration-200 hover:bg-[#2a2a2a]" href="/services/%D8%A3%D8%A8%D9%88%D8%A7%D8%A8-%D8%AD%D8%AF%D9%8A%D8%AF-%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/">
+                  <div class="w-1.5 h-1.5 rounded-full bg-gray-600 group-hover:bg-[#3DB246] transition-colors shrink-0">
+                  </div>
+                  <span class="text-[13px] text-gray-300 group-hover:text-white transition-colors">أبواب حديد خارجية في الكويت</span></a><a class="group flex items-center gap-2.5 px-4 py-2.5 transition-all duration-200 hover:bg-[#2a2a2a]" href="/services/pvc/">
+                  <div class="w-1.5 h-1.5 rounded-full bg-gray-600 group-hover:bg-[#3DB246] transition-colors shrink-0">
+                  </div>
+                  <span class="text-[13px] text-gray-300 group-hover:text-white transition-colors">PVC تنافسية</span></a><a class="group flex items-center gap-2.5 px-4 py-2.5 transition-all duration-200 hover:bg-[#2a2a2a]" href="/services/%D8%A3%D9%81%D8%B6%D9%84-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%88%D8%AA%D9%86%D9%81%D9%8A%D8%B0-%D9%84%D9%84%D9%85%D8%AC%D8%A7%D9%84%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D9%81%D9%8A/">
+                  <div class="w-1.5 h-1.5 rounded-full bg-gray-600 group-hover:bg-[#3DB246] transition-colors shrink-0">
+                  </div>
+                  <span class="text-[13px] text-gray-300 group-hover:text-white transition-colors">أفضل تصميم وتنفيذ للمجالس الخارجية في</span></a>
+                </div>
+              </div>
+            </div>
+            <a class="px-4 py-2 rounded-md text-base font-normal transition-colors {{CLS:/projects/}}" href="/projects/"><span>مشاريعنا</span></a><a class="px-4 py-2 rounded-md text-base font-normal transition-colors {{CLS:/about/}}" href="/about/"><span>من نحن</span></a><a class="px-4 py-2 rounded-md text-base font-normal transition-colors {{CLS:/contact/}}" href="/contact/"><span>اتصل بنا</span></a>
+          </nav>
+          <div class="flex items-center space-x-0.5 sm:space-x-4 lg:space-x-6">
+            <button class="hidden md:flex group relative overflow-hidden items-center justify-center bg-gradient-to-r from-green-600 to-[#3DB246] p-px rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(61,178,70,0.3)] cursor-pointer">
+            <div class="bg-[#0D0D11] group-hover:bg-transparent px-6 py-2 rounded-full transition-colors duration-300 cursor-pointer">
+              <span class="text-sm font-normal text-white tracking-wide whitespace-nowrap cursor-pointer">استشارة مجانية</span>
+            </div>
+            </button>
+          </div>
+          <div class="flex lg:hidden items-center gap-3 mr-2">
+            <a target="_blank" rel="noopener noreferrer" class="cursor-pointer transition-transform hover:scale-110" aria-label="Instagram" href="https://www.instagram.com/haddad_muzallat_kuwait/">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="6" fill="url(#ig_grad_mobile)"></rect><rect x="2" y="2" width="20" height="20" rx="5" stroke="white" stroke-width="1.5"></rect><path d="M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5Z" stroke="white" stroke-width="1.5"></path><circle cx="17.5" cy="6.5" r="1.2" fill="white"></circle><defs><radialgradient id="ig_grad_mobile" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4 20) rotate(-45) scale(26)"><stop stop-color="#F0C24E"></stop><stop offset="0.3" stop-color="#E95B39"></stop><stop offset="0.7" stop-color="#CE277D"></stop><stop offset="1" stop-color="#4441D2"></stop></radialgradient></defs></svg>
+            </a><a target="_blank" rel="noopener noreferrer" class="cursor-pointer transition-transform hover:scale-110" aria-label="YouTube" href="https://www.youtube.com/@haddadkuwait">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.58 6.54C21.43 5.96 21.05 5.51 20.47 5.36C18.66 4.88 12 4.88 12 4.88C12 4.88 5.34 4.88 3.53 5.36C2.95 5.51 2.57 5.96 2.42 6.54C1.94 8.35 1.94 12 1.94 12C1.94 12 1.94 15.65 2.42 17.46C2.57 18.04 2.95 18.49 3.53 18.64C5.34 19.12 12 19.12 12 19.12C12 19.12 18.66 19.12 20.47 18.64C21.05 18.49 21.43 18.04 21.58 17.46C22.06 15.65 22.06 12 22.06 12C22.06 12 22.06 8.35 21.58 6.54Z" fill="#FF0000"></path><path d="M9.99 15.11L15.22 12L9.99 8.88V15.11Z" fill="white"></path></svg>
+            </a><a target="_blank" rel="noopener noreferrer" class="cursor-pointer transition-transform hover:scale-110" aria-label="WhatsApp" href="https://wa.me/96569690261">
+            <svg class="w-6 h-6" fill="#25D366" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+            </a>
+          </div>
+          <button class="lg:hidden text-gray-300 hover:text-white transition-colors p-2 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lg:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0 mt-0">
+    <div class="flex flex-col max-h-[80vh] rounded-2xl bg-[#0D0D11]/95 backdrop-blur-2xl border border-white/10 shadow-2xl">
+      <div class="flex-1 overflow-y-auto mobile-menu-scroll px-2 py-4">
+        <a class="block px-4 py-3.5 mb-2 rounded-xl text-sm font-normal text-gray-200 hover:text-white hover:bg-white/10 transition-colors" href="/"><span>الرئيسية</span></a>
+        <div class="mb-2">
+          <div class="border-b border-white/5">
+            <div class="flex items-center justify-between">
+              <a class="flex-1 py-3.5 pl-4 text-sm font-normal text-gray-200 hover:text-[#3DB246] transition-colors" href="/services/"><span>الخدمات</span></a><button class="p-3.5 pr-4 text-gray-500 hover:text-[#3DB246] transition-colors cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down transition-transform duration-300" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+              </button>
+            </div>
+            <div class="overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0">
+              <div class="grid grid-cols-1 gap-0.5 px-3 pb-3">
+                <a class="flex items-center justify-between w-full px-3 py-3 rounded-lg text-xs font-normal text-[#3DB246] bg-green-500/5 border border-green-500/10 mb-1" href="/services/"><span>عرض جميع الخدمات</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+                <div>
+                  <a class="block px-3 py-2.5 rounded-lg text-xs text-gray-400 hover:text-white hover:bg-white/5 transition-all" href="/services/%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D9%85%D8%B8%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/"><span>تركيب مظلات الكويت</span></a>
+                </div>
+                <div>
+                  <a class="block px-3 py-2.5 rounded-lg text-xs text-gray-400 hover:text-white hover:bg-white/5 transition-all" href="/services/%D8%B3%D9%8A%D8%A7%D8%AC-%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D8%A6%D9%82-%D8%A7%D9%84%D8%A3%D8%AE%D8%B6%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/"><span>سياج الحدائق الأخضر في الكويت</span></a>
+                </div>
+                <div>
+                  <a class="block px-3 py-2.5 rounded-lg text-xs text-gray-400 hover:text-white hover:bg-white/5 transition-all" href="/services/%D8%A3%D8%A8%D9%88%D8%A7%D8%A8-%D8%AD%D8%AF%D9%8A%D8%AF-%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/"><span>أبواب حديد خارجية في الكويت</span></a>
+                </div>
+                <div>
+                  <a class="block px-3 py-2.5 rounded-lg text-xs text-gray-400 hover:text-white hover:bg-white/5 transition-all" href="/services/pvc/"><span>PVC تنافسية</span></a>
+                </div>
+                <div>
+                  <a class="block px-3 py-2.5 rounded-lg text-xs text-gray-400 hover:text-white hover:bg-white/5 transition-all" href="/services/%D8%A3%D9%81%D8%B6%D9%84-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%88%D8%AA%D9%86%D9%81%D9%8A%D8%B0-%D9%84%D9%84%D9%85%D8%AC%D8%A7%D9%84%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D9%81%D9%8A/"><span>أفضل تصميم وتنفيذ للمجالس الخارجية في</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="block px-4 py-3.5 mb-2 rounded-xl text-sm font-normal text-gray-200 hover:text-white hover:bg-white/10 transition-colors" href="/projects/"><span>مشاريعنا</span></a><a class="block px-4 py-3.5 mb-2 rounded-xl text-sm font-normal text-gray-200 hover:text-white hover:bg-white/10 transition-colors" href="/about/"><span>من نحن</span></a><a class="block px-4 py-3.5 mb-2 rounded-xl text-sm font-normal text-gray-200 hover:text-white hover:bg-white/10 transition-colors" href="/contact/"><span>اتصل بنا</span></a>
+      </div>
+    </div>
+  </div>
+</nav>
