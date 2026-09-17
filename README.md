@@ -5,8 +5,9 @@ This repository contains a browser "Save As…" capture of <https://haddadkuwait
 served from a single web root.
 
 The original capture was 633 files / ~51 MB spread over 17 loose `.html` files and 17
-sibling `*_files/` folders. It is now 107 files / ~15 MB under `site/`, with one copy of
-each asset and route-shaped URLs that match the live site.
+sibling `*_files/` folders. It is now 98 files / ~15 MB under `site/`, with one copy of
+each asset and route-shaped URLs that match the live site. (The blog listing, the four
+blog articles and all rendered links to them were removed on request; see “Blog removal”.)
 
 ## Running locally
 
@@ -38,15 +39,12 @@ site/
 │   ├── أفضل-تصميم-وتنفيذ-للمجالس-الخارجية-في/index.html
 │   ├── تركيب-مظلات-الكويت/index.html
 │   └── سياج-الحدائق-الأخضر-في-الكويت/index.html
-├── blog/
-│   ├── index.html                # /blog  (listing)
-│   └── <4 article slugs>/index.html
 └── assets/
     ├── css/    29 stylesheets (build chunks)
     ├── js/     11 scripts (build chunks)
     ├── fonts/  18 woff2 files
     ├── icons/  favicon.ico, kw.svg
-    └── images/ 30 files (17 webp, 13 jpg)
+    └── images/ 26 files (13 webp, 13 jpg)
 ```
 
 Directory names are the URL-decoded Arabic slugs used by the live site, so the local URL of
@@ -104,8 +102,8 @@ references with 0 missing.
 
 ## Inventory
 
-**Pages (17):** home, services listing, 5 service detail pages, projects, blog listing,
-4 blog articles, about, contact, FAQ, site map.
+**Pages (12):** home, services listing, 5 service detail pages, projects, about, contact,
+FAQ, site map. (The blog listing and its 4 articles were removed per request.)
 
 **Repeated blocks (present in the markup, not extracted — see above):** top contact/social
 bar, main navigation + mobile menu, hero carousel, section headings, service cards, project
@@ -118,6 +116,17 @@ buttons.
 **JavaScript:** Next.js App Router runtime + hydration, Redux Toolkit Query data layer
 pointed at `https://server.haddadkuwait.com/api`, carousel/slider, mobile menu, FAQ
 accordion, contact form, scroll/animation effects, floating contact buttons.
+
+## Blog removal
+
+The `/blog` listing page and the four article pages were deleted together with every
+rendered reference: the `المدونة` entries in the desktop and mobile navigation on all
+pages, the homepage “المنشورات الأكثر شعبية” section (cards + pagination), the `/blog`
+entry in the site-map list, and the four `blogs-*.webp` images that were then
+unreferenced. A few `/blog` strings remain inside the `__next_f` hydration payloads as
+dead data — they are not rendered or fetched, and editing the positional payload arrays
+would corrupt them. If the app ever re-hydrates against the live backend, a stale nav
+entry pointing at the removed `/blog` route could reappear.
 
 ## External dependencies
 
